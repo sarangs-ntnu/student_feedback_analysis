@@ -57,8 +57,7 @@ if st.button("Analyze Text"):
         
         st.markdown(f"**Sentiment:** `{sentiment_result}`")
         
-        st.markdown("**Aspect Identified:**")
-        st.write(", ".join(aspect_result))
+        st.write(f"**Aspect:** `{aspect_result}`")
     else:
         st.error("Please enter some text for analysis.")
 
@@ -68,10 +67,3 @@ st.markdown("**Developed by Sarang Shaikh**")
 st.markdown("""
 Feel free to reach out for more information or suggestions!
 """)
-
-
-
-
-
-
-
