@@ -1,5 +1,3 @@
-
-
 import streamlit as st
 import numpy as np
 import pandas as pd
@@ -31,6 +29,11 @@ def predict_course_aspect(feedback):
     candidate_labels = ['relevancy', 'general', 'content', 'learning material', 'pace']
     output = classifier(sequence_to_classify, candidate_labels, multi_label=False)
     return str(output['labels'][0])
+
+# Streamlit app layout
+st.set_page_config(page_title="Aspect-based Sentiment Anlaysis of Student Feedback", layout="centered", initial_sidebar_state="auto")
+
+
 
 
 
